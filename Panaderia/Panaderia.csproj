@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4554519-5CF9-49A7-B690-3B1CEB5AC23D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Panaderia</RootNamespace>
+    <AssemblyName>Panaderia</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adrecetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adrecetas.Designer.cs">
+      <DependentUpon>adrecetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimatedGif.cs" />
+    <Compile Include="bancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bancos.Designer.cs">
+      <DependentUpon>bancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientes.Designer.cs">
+      <DependentUpon>clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="compras.Designer.cs">
+      <DependentUpon>compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="comprashoy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comprashoy.Designer.cs">
+      <DependentUpon>comprashoy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conexion.cs" />
+    <Compile Include="empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empleados.Designer.cs">
+      <DependentUpon>empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enviarsucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enviarsucursal.Designer.cs">
+      <DependentUpon>enviarsucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="estadopedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="estadopedido.Designer.cs">
+      <DependentUpon>estadopedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="exingredientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exingredientes.Designer.cs">
+      <DependentUpon>exingredientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="facturarcompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facturarcompras.Designer.cs">
+      <DependentUpon>facturarcompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="facturarventa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facturarventa.Designer.cs">
+      <DependentUpon>facturarventa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingredientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingredientes.Designer.cs">
+      <DependentUpon>ingredientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento.Designer.cs">
+      <DependentUpon>mantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pan.Designer.cs">
+      <DependentUpon>pan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pedidos.Designer.cs">
+      <DependentUpon>pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pedidosproduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pedidosproduccion.Designer.cs">
+      <DependentUpon>pedidosproduccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principal.Designer.cs">
+      <DependentUpon>principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="produccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="produccion.Designer.cs">
+      <DependentUpon>produccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proveedores.Designer.cs">
+      <DependentUpon>proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="recetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recetas.Designer.cs">
+      <DependentUpon>recetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="recibirpedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recibirpedido.Designer.cs">
+      <DependentUpon>recibirpedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rolnivel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rolnivel.Designer.cs">
+      <DependentUpon>rolnivel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sesion.Designer.cs">
+      <DependentUpon>sesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock.Designer.cs">
+      <DependentUpon>stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tipoplanilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tipoplanilla.Designer.cs">
+      <DependentUpon>tipoplanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usuarios.Designer.cs">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventas.Designer.cs">
+      <DependentUpon>ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventashoy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventashoy.Designer.cs">
+      <DependentUpon>ventashoy.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adrecetas.resx">
+      <DependentUpon>adrecetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bancos.resx">
+      <DependentUpon>bancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientes.resx">
+      <DependentUpon>clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="compras.resx">
+      <DependentUpon>compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="comprashoy.resx">
+      <DependentUpon>comprashoy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empleados.resx">
+      <DependentUpon>empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enviarsucursal.resx">
+      <DependentUpon>enviarsucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="estadopedido.resx">
+      <DependentUpon>estadopedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exingredientes.resx">
+      <DependentUpon>exingredientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facturarcompras.resx">
+      <DependentUpon>facturarcompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facturarventa.resx">
+      <DependentUpon>facturarventa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingredientes.resx">
+      <DependentUpon>ingredientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento.resx">
+      <DependentUpon>mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pan.resx">
+      <DependentUpon>pan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pedidos.resx">
+      <DependentUpon>pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pedidosproduccion.resx">
+      <DependentUpon>pedidosproduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principal.resx">
+      <DependentUpon>principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="produccion.resx">
+      <DependentUpon>produccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="proveedores.resx">
+      <DependentUpon>proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recetas.resx">
+      <DependentUpon>recetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recibirpedido.resx">
+      <DependentUpon>recibirpedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rolnivel.resx">
+      <DependentUpon>rolnivel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sesion.resx">
+      <DependentUpon>sesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock.resx">
+      <DependentUpon>stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tipoplanilla.resx">
+      <DependentUpon>tipoplanilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usuarios.resx">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas.resx">
+      <DependentUpon>ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventashoy.resx">
+      <DependentUpon>ventashoy.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backtext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel602.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel1641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnbig60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel60back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pd64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnv3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnv4.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
