@@ -439,8 +439,7 @@ namespace Panaderia
         {
             if (dataGridView5.RowCount > 0)
             {
-
-
+                MessageBox.Show("Aun quedan panes en la lista", "Confirmacion de pedidos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
