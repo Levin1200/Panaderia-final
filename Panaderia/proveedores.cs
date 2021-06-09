@@ -176,14 +176,18 @@ namespace Panaderia
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            button19.Text = "Actualizar";
-            textBox19.Text = "" + dataGridView1.CurrentRow.Cells[1].Value;
-            textBox4.Text = "" + dataGridView1.CurrentRow.Cells[4].Value;
-            textBox2.Text = "" + dataGridView1.CurrentRow.Cells[2].Value;
-            textBox3.Text = "" + dataGridView1.CurrentRow.Cells[3].Value;
-            textBox5.Text = "" + dataGridView1.CurrentRow.Cells[5].Value;
-            textBox5.Enabled = true;
-            label13.Text = "" + dataGridView1.CurrentRow.Cells[0].Value;
+          
+
+            if (dataGridView1.RowCount > 0) {
+                button19.Text = "Actualizar";
+                textBox19.Text = "" + dataGridView1.CurrentRow.Cells[1].Value;
+                textBox4.Text = "" + dataGridView1.CurrentRow.Cells[4].Value;
+                textBox2.Text = "" + dataGridView1.CurrentRow.Cells[2].Value;
+                textBox3.Text = "" + dataGridView1.CurrentRow.Cells[3].Value;
+                textBox5.Text = "" + dataGridView1.CurrentRow.Cells[5].Value;
+                textBox5.Enabled = true;
+                label13.Text = "" + dataGridView1.CurrentRow.Cells[0].Value;
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -194,6 +198,15 @@ namespace Panaderia
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             limpiar();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                pictureBox2_Click(sender, e);
+                e.Handled = true;
+            }
         }
     }
 }

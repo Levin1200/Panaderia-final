@@ -362,14 +362,14 @@ namespace Panaderia
 
         private void cargarpedidos()
         {
-            try
+            // try
+            //{
+            using (SqlConnection cn = new SqlConnection("server=" + label12.Text + " ; database=" + label9.Text + " ; user id = sa; password='Valley';"))
             {
-                using (SqlConnection cn = new SqlConnection("server=" + label12.Text + " ; database=" + label9.Text + " ; user id = sa; password='Valley';"))
+                using (SqlCommand cmd = new SqlCommand("ppedido", cn))
                 {
-                    using (SqlCommand cmd = new SqlCommand("ppedido", cn))
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = 1; //int.Parse(label13.Text);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@id", SqlDbType.Int).Value = 1; //int.Parse(label13.Text);
                         cmd.Parameters.Add("@cod", SqlDbType.VarChar).Value = textBox8.Text;
                         cmd.Parameters.Add("@sucursal", SqlDbType.Int).Value = 1;
                         cmd.Parameters.Add("@estado", SqlDbType.VarChar).Value = 1;
@@ -384,8 +384,8 @@ namespace Panaderia
                         posicion(4);
                     }
                 }
-            }
-            catch { MessageBox.Show("Ha sucedido un error", "Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+           // }
+           // catch { MessageBox.Show("Ha sucedido un error", "Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
 

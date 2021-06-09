@@ -50,6 +50,8 @@ namespace Panaderia
                             label6.Text= "" + dataGridView1.Rows[0].Cells[2].Value;
                             pictureBox47.ImageLocation =  dataGridView1.Rows[0].Cells[4].Value.ToString();
                             label13.Text = dataGridView1.Rows[0].Cells[4].Value.ToString();
+                            label15.Text = dataGridView1.Rows[0].Cells[5].Value.ToString();
+                            label17.Text = dataGridView1.Rows[0].Cells[6].Value.ToString();
                             label9.Text = servertxt.Text;
                             label8.Text = dbtxt.Text;
                             MessageBox.Show("Inicio correcto");

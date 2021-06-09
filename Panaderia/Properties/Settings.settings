@@ -23,5 +23,11 @@
     <Setting Name="sucursal" Type="System.String" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
+    <Setting Name="rol" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x0</Value>
+    </Setting>
+    <Setting Name="nivel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

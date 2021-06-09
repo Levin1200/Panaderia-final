@@ -183,5 +183,14 @@ namespace Panaderia
         {
             cargarpan();
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                pictureBox2_Click(sender, e);
+                e.Handled = true;
+            }
+        }
     }
 }

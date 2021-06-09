@@ -72,7 +72,7 @@ namespace Panaderia
                     }
                 }
             }
-            catch { MessageBox.Show("Ha sucedido un error", "Compras", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            catch { MessageBox.Show("Ha sucedido un error", "Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
@@ -148,8 +148,8 @@ namespace Panaderia
                         cmd.Parameters.Add("@ctel", SqlDbType.VarChar).Value = "1";
                         cmd.Parameters.Add("@cdir", SqlDbType.VarChar).Value = "1";
                         cmd.Parameters.Add("@ccred", SqlDbType.Decimal).Value = 1;
-                        cmd.Parameters.Add("@cestado", SqlDbType.Int).Value = 1;
-                        cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 6;
+                        cmd.Parameters.Add("@cestado", SqlDbType.Int).Value =int.Parse(label36.Text);
+                        cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 7;
                         cmd.Parameters.Add("@cid", SqlDbType.Int).Value = 1;
                         cmd.Parameters.Add("@numerot", SqlDbType.VarChar).Value = "1";
                         cmd.Parameters.Add("@compañiat", SqlDbType.VarChar).Value = "1";
@@ -416,13 +416,73 @@ namespace Panaderia
                     }
                 }
             }
-            catch { MessageBox.Show("Ha sucedido un error", "Detalle Compras", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            catch { MessageBox.Show("Ha sucedido un error", "Detalle Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
         int detventas;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             detventas = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             cargardetventas();
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

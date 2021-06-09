@@ -58,5 +58,19 @@ namespace Panaderia
         {
             cargarsucursales();
         }
+
+        private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                pictureBox14_Click(sender, e);
+                e.Handled = true;
+            }
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            cargarsucursales();
+        }
     }
 }

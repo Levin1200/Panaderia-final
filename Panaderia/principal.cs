@@ -470,5 +470,12 @@ namespace Panaderia
             bc.MdiParent = this.MdiParent;
             bc.Show();
         }
+
+        private void pictureBox23_Click(object sender, EventArgs e)
+        {
+            rolnivel bc = new rolnivel();
+            bc.MdiParent = this.MdiParent;
+            bc.Show();
+        }
     }
 }

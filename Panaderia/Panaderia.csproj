@@ -150,6 +150,12 @@
     <Compile Include="pedidosproduccion.Designer.cs">
       <DependentUpon>pedidosproduccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="permisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="permisos.Designer.cs">
+      <DependentUpon>permisos.cs</DependentUpon>
+    </Compile>
     <Compile Include="principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -280,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pedidosproduccion.resx">
       <DependentUpon>pedidosproduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="permisos.resx">
+      <DependentUpon>permisos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="principal.resx">
       <DependentUpon>principal.cs</DependentUpon>

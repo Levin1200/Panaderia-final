@@ -50,21 +50,25 @@ namespace Panaderia
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox47 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox47 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             this.SuspendLayout();
             // 
             // dbtxt
@@ -295,17 +299,6 @@ namespace Panaderia
             this.pictureBox3.TabIndex = 32;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox47
-            // 
-            this.pictureBox47.DataBindings.Add(new System.Windows.Forms.Binding("ImageLocation", global::Panaderia.Properties.Settings.Default, "imagen", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.pictureBox47.ImageLocation = global::Panaderia.Properties.Settings.Default.imagen;
-            this.pictureBox47.Location = new System.Drawing.Point(34, 509);
-            this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox47.TabIndex = 141;
-            this.pictureBox47.TabStop = false;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -316,6 +309,60 @@ namespace Panaderia
             this.label12.Size = new System.Drawing.Size(65, 21);
             this.label12.TabIndex = 142;
             this.label12.Text = "imagen:";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(-36, 493);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(497, 100);
+            this.pictureBox4.TabIndex = 144;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(197, 488);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(36, 21);
+            this.label14.TabIndex = 146;
+            this.label14.Text = "Rol:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(275, 488);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(49, 21);
+            this.label16.TabIndex = 148;
+            this.label16.Text = "Nivel:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "nivel", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(329, 488);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(35, 21);
+            this.label17.TabIndex = 147;
+            this.label17.Text = global::Panaderia.Properties.Settings.Default.nivel;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "rol", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(234, 488);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(35, 21);
+            this.label15.TabIndex = 145;
+            this.label15.Text = global::Panaderia.Properties.Settings.Default.rol;
             // 
             // label13
             // 
@@ -328,6 +375,17 @@ namespace Panaderia
             this.label13.Size = new System.Drawing.Size(0, 21);
             this.label13.TabIndex = 143;
             this.label13.Text = global::Panaderia.Properties.Settings.Default.imagen;
+            // 
+            // pictureBox47
+            // 
+            this.pictureBox47.DataBindings.Add(new System.Windows.Forms.Binding("ImageLocation", global::Panaderia.Properties.Settings.Default, "imagen", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.pictureBox47.ImageLocation = global::Panaderia.Properties.Settings.Default.imagen;
+            this.pictureBox47.Location = new System.Drawing.Point(34, 509);
+            this.pictureBox47.Name = "pictureBox47";
+            this.pictureBox47.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox47.TabIndex = 141;
+            this.pictureBox47.TabStop = false;
             // 
             // label8
             // 
@@ -377,14 +435,6 @@ namespace Panaderia
             this.label6.TabIndex = 19;
             this.label6.Text = global::Panaderia.Properties.Settings.Default.Sesion;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(-31, 488);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(497, 100);
-            this.pictureBox4.TabIndex = 144;
-            this.pictureBox4.TabStop = false;
-            // 
             // sesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -393,6 +443,10 @@ namespace Panaderia
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(421, 565);
             this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox47);
@@ -431,8 +485,8 @@ namespace Panaderia
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -468,5 +522,9 @@ namespace Panaderia
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }

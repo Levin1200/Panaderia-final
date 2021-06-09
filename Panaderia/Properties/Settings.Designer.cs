@@ -106,5 +106,29 @@ namespace Panaderia.Properties {
                 this["sucursal"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0x0")]
+        public string rol {
+            get {
+                return ((string)(this["rol"]));
+            }
+            set {
+                this["rol"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0x0")]
+        public string nivel {
+            get {
+                return ((string)(this["nivel"]));
+            }
+            set {
+                this["nivel"] = value;
+            }
+        }
     }
 }

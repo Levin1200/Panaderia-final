@@ -69,172 +69,158 @@ namespace Panaderia
             this.label7.AutoSize = true;
             this.label7.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "Usuario", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label7.Location = new System.Drawing.Point(701, 66);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 21);
             this.label7.TabIndex = 129;
             this.label7.Text = global::Panaderia.Properties.Settings.Default.Usuario;
-            this.label7.Visible = false;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "Sesion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label21.Location = new System.Drawing.Point(701, 45);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(35, 21);
             this.label21.TabIndex = 128;
             this.label21.Text = global::Panaderia.Properties.Settings.Default.Sesion;
-            this.label21.Visible = false;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label14.Location = new System.Drawing.Point(820, 24);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(46, 21);
             this.label14.TabIndex = 136;
             this.label14.Text = "1007";
-            this.label14.Visible = false;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label13.Location = new System.Drawing.Point(701, 24);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(19, 21);
             this.label13.TabIndex = 134;
             this.label13.Text = "1";
-            this.label13.Visible = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label4.Location = new System.Drawing.Point(636, 24);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 21);
             this.label4.TabIndex = 135;
             this.label4.Text = "Estado";
-            this.label4.Visible = false;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label15.Location = new System.Drawing.Point(755, 24);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(63, 21);
             this.label15.TabIndex = 137;
             this.label15.Text = "Aceptar";
-            this.label15.Visible = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label6.Location = new System.Drawing.Point(636, 66);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 21);
             this.label6.TabIndex = 126;
             this.label6.Text = "Código:";
-            this.label6.Visible = false;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label18.Location = new System.Drawing.Point(866, 24);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(70, 21);
             this.label18.TabIndex = 139;
             this.label18.Text = "Cancelar";
-            this.label18.Visible = false;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label17.Location = new System.Drawing.Point(931, 24);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(46, 21);
             this.label17.TabIndex = 138;
             this.label17.Text = "1003";
-            this.label17.Visible = false;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label10.Location = new System.Drawing.Point(755, 66);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(33, 21);
             this.label10.TabIndex = 132;
             this.label10.Text = "BD:";
-            this.label10.Visible = false;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label11.Location = new System.Drawing.Point(755, 45);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(58, 21);
             this.label11.TabIndex = 133;
             this.label11.Text = "Server:";
-            this.label11.Visible = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "db", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label9.Location = new System.Drawing.Point(824, 66);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(35, 21);
             this.label9.TabIndex = 131;
             this.label9.Text = global::Panaderia.Properties.Settings.Default.db;
-            this.label9.Visible = false;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "server", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label12.Location = new System.Drawing.Point(824, 45);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(35, 21);
             this.label12.TabIndex = 130;
             this.label12.Text = global::Panaderia.Properties.Settings.Default.server;
-            this.label12.Visible = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label5.Location = new System.Drawing.Point(636, 45);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 21);
             this.label5.TabIndex = 127;
             this.label5.Text = "Sesión:";
-            this.label5.Visible = false;
             // 
             // label8
             // 
@@ -252,38 +238,35 @@ namespace Panaderia
             this.label60.AutoSize = true;
             this.label60.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "sucursal", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.label60.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.ForeColor = System.Drawing.Color.White;
+            this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label60.Location = new System.Drawing.Point(607, 24);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(19, 21);
             this.label60.TabIndex = 170;
             this.label60.Text = global::Panaderia.Properties.Settings.Default.sucursal;
-            this.label60.Visible = false;
             // 
             // label61
             // 
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.ForeColor = System.Drawing.Color.White;
+            this.label61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label61.Location = new System.Drawing.Point(526, 24);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(69, 21);
             this.label61.TabIndex = 171;
             this.label61.Text = "Sucursal";
-            this.label61.Visible = false;
             // 
             // label62
             // 
             this.label62.AutoSize = true;
             this.label62.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "imagen", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.label62.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.ForeColor = System.Drawing.Color.White;
+            this.label62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label62.Location = new System.Drawing.Point(601, 26);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(0, 21);
             this.label62.TabIndex = 169;
             this.label62.Text = global::Panaderia.Properties.Settings.Default.imagen;
-            this.label62.Visible = false;
             // 
             // allpedidos
             // 

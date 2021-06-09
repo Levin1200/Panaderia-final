@@ -133,6 +133,8 @@ namespace Panaderia
             this.label24 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -173,7 +175,7 @@ namespace Panaderia
             this.label10.Size = new System.Drawing.Size(33, 21);
             this.label10.TabIndex = 121;
             this.label10.Text = "BD:";
-            this.label10.Visible = false;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
@@ -185,7 +187,7 @@ namespace Panaderia
             this.label11.Size = new System.Drawing.Size(58, 21);
             this.label11.TabIndex = 122;
             this.label11.Text = "Server:";
-            this.label11.Visible = false;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label9
             // 
@@ -198,7 +200,7 @@ namespace Panaderia
             this.label9.Size = new System.Drawing.Size(35, 21);
             this.label9.TabIndex = 120;
             this.label9.Text = global::Panaderia.Properties.Settings.Default.db;
-            this.label9.Visible = false;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label12
             // 
@@ -211,7 +213,7 @@ namespace Panaderia
             this.label12.Size = new System.Drawing.Size(35, 21);
             this.label12.TabIndex = 119;
             this.label12.Text = global::Panaderia.Properties.Settings.Default.server;
-            this.label12.Visible = false;
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label5
             // 
@@ -223,7 +225,7 @@ namespace Panaderia
             this.label5.Size = new System.Drawing.Size(59, 21);
             this.label5.TabIndex = 116;
             this.label5.Text = "Sesión:";
-            this.label5.Visible = false;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label7
             // 
@@ -236,7 +238,7 @@ namespace Panaderia
             this.label7.Size = new System.Drawing.Size(35, 21);
             this.label7.TabIndex = 118;
             this.label7.Text = global::Panaderia.Properties.Settings.Default.Usuario;
-            this.label7.Visible = false;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -248,7 +250,7 @@ namespace Panaderia
             this.label6.Size = new System.Drawing.Size(63, 21);
             this.label6.TabIndex = 115;
             this.label6.Text = "Código:";
-            this.label6.Visible = false;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label21
             // 
@@ -261,7 +263,7 @@ namespace Panaderia
             this.label21.Size = new System.Drawing.Size(35, 21);
             this.label21.TabIndex = 117;
             this.label21.Text = global::Panaderia.Properties.Settings.Default.Sesion;
-            this.label21.Visible = false;
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // textBox6
             // 
@@ -311,7 +313,7 @@ namespace Panaderia
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("HelveticaNeueLT Std Med", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(242, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 23);
@@ -399,12 +401,12 @@ namespace Panaderia
             this.label22.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "sucursal", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.label22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(873, 59);
+            this.label22.Location = new System.Drawing.Point(847, 59);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(19, 21);
             this.label22.TabIndex = 162;
             this.label22.Text = global::Panaderia.Properties.Settings.Default.sucursal;
-            this.label22.Visible = false;
+            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label23
             // 
@@ -416,7 +418,7 @@ namespace Panaderia
             this.label23.Size = new System.Drawing.Size(69, 21);
             this.label23.TabIndex = 163;
             this.label23.Text = "Sucursal";
-            this.label23.Visible = false;
+            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // pictureBox6
             // 
@@ -533,7 +535,7 @@ namespace Panaderia
             dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -588,7 +590,7 @@ namespace Panaderia
             dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -878,7 +880,7 @@ namespace Panaderia
             dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -1105,7 +1107,7 @@ namespace Panaderia
             dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -1273,7 +1275,7 @@ namespace Panaderia
             dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle29.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -1380,12 +1382,38 @@ namespace Panaderia
             this.label25.TabIndex = 100;
             this.label25.Text = "n/a";
             // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(574, 9);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(19, 21);
+            this.label36.TabIndex = 164;
+            this.label36.Text = "1";
+            this.label36.Click += new System.EventHandler(this.label36_Click);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(509, 9);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(56, 21);
+            this.label37.TabIndex = 165;
+            this.label37.Text = "Estado";
+            this.label37.Click += new System.EventHandler(this.label37_Click);
+            // 
             // ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1003, 618);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.label37);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label10);
@@ -1406,6 +1434,7 @@ namespace Panaderia
             this.Controls.Add(this.allpedidos);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.realizarcompras);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ventas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1538,5 +1567,7 @@ namespace Panaderia
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
     }
 }

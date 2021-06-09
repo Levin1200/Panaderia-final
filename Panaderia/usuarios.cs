@@ -61,6 +61,7 @@ namespace Panaderia
                         cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 3;
                         cmd.Parameters.Add("@passwords", SqlDbType.VarChar).Value = "1";
                         cmd.Parameters.Add("@imagen", SqlDbType.VarChar).Value = "1";
+                        cmd.Parameters.Add("@rol", SqlDbType.Int).Value = 1;
                         cn.Open();
                         cmd.ExecuteNonQuery();
                         SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -110,6 +111,7 @@ namespace Panaderia
                                 cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 1;
                                 cmd.Parameters.Add("@passwords", SqlDbType.VarChar).Value = textBox4.Text;
                                 cmd.Parameters.Add("@imagen", SqlDbType.VarChar).Value = pictureBox13.ImageLocation;
+                                cmd.Parameters.Add("@rol", SqlDbType.Int).Value = int.Parse(textBox6.Text);
                                 cn.Open();
                                 cmd.ExecuteNonQuery();
                                 MessageBox.Show("Se ha agregado una nuevo Usuario", "Usuarios", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -144,7 +146,7 @@ namespace Panaderia
                                 cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 2;
                                 cmd.Parameters.Add("@passwords", SqlDbType.VarChar).Value = textBox4.Text;
                                 cmd.Parameters.Add("@imagen", SqlDbType.VarChar).Value = pictureBox13.ImageLocation;
-
+                                cmd.Parameters.Add("@rol", SqlDbType.Int).Value = int.Parse(textBox6.Text);
 
                                 cn.Open();
                                 cmd.ExecuteNonQuery();
@@ -204,6 +206,15 @@ namespace Panaderia
         {
             openFileDialog1.ShowDialog();
             pictureBox13.ImageLocation = openFileDialog1.FileName;
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                pictureBox2_Click(sender, e);
+                e.Handled = true;
+            }
         }
     }
 }

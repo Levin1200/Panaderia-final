@@ -29,9 +29,9 @@ namespace Panaderia
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(empleados));
             this.button15 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -118,7 +118,7 @@ namespace Panaderia
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.button15.BackgroundImage = global::Panaderia.Properties.Resources.btn;
+            this.button15.BackgroundImage = global::Panaderia.Properties.Resources.backbtn;
             this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -127,7 +127,7 @@ namespace Panaderia
             this.button15.Location = new System.Drawing.Point(27, 280);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(113, 39);
-            this.button15.TabIndex = 71;
+            this.button15.TabIndex = 13;
             this.button15.Text = "🡸";
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.button15_Click);
@@ -260,35 +260,35 @@ namespace Panaderia
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridView1.Location = new System.Drawing.Point(26, 22);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(687, 279);
@@ -360,7 +360,8 @@ namespace Panaderia
             this.textBox1.Location = new System.Drawing.Point(807, 121);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(145, 23);
-            this.textBox1.TabIndex = 64;
+            this.textBox1.TabIndex = 10;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label1
             // 
@@ -421,7 +422,7 @@ namespace Panaderia
             this.textBox9.Location = new System.Drawing.Point(120, 324);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(150, 18);
-            this.textBox9.TabIndex = 107;
+            this.textBox9.TabIndex = 8;
             this.textBox9.Text = "1";
             // 
             // label10
@@ -454,7 +455,7 @@ namespace Panaderia
             this.textBox8.Location = new System.Drawing.Point(508, 205);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(150, 18);
-            this.textBox8.TabIndex = 104;
+            this.textBox8.TabIndex = 5;
             // 
             // label9
             // 
@@ -485,7 +486,7 @@ namespace Panaderia
             this.textBox6.Location = new System.Drawing.Point(311, 83);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(150, 18);
-            this.textBox6.TabIndex = 101;
+            this.textBox6.TabIndex = 1;
             // 
             // label6
             // 
@@ -516,7 +517,7 @@ namespace Panaderia
             this.textBox7.Location = new System.Drawing.Point(507, 266);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(150, 18);
-            this.textBox7.TabIndex = 98;
+            this.textBox7.TabIndex = 7;
             // 
             // label7
             // 
@@ -547,7 +548,7 @@ namespace Panaderia
             this.textBox4.Location = new System.Drawing.Point(509, 144);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(142, 18);
-            this.textBox4.TabIndex = 95;
+            this.textBox4.TabIndex = 4;
             // 
             // label4
             // 
@@ -578,7 +579,7 @@ namespace Panaderia
             this.textBox3.Location = new System.Drawing.Point(315, 144);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(144, 18);
-            this.textBox3.TabIndex = 92;
+            this.textBox3.TabIndex = 3;
             // 
             // label3
             // 
@@ -610,7 +611,7 @@ namespace Panaderia
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(276, 54);
-            this.textBox5.TabIndex = 89;
+            this.textBox5.TabIndex = 6;
             // 
             // label5
             // 
@@ -641,7 +642,7 @@ namespace Panaderia
             this.textBox2.Location = new System.Drawing.Point(120, 143);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(143, 18);
-            this.textBox2.TabIndex = 86;
+            this.textBox2.TabIndex = 2;
             // 
             // label2
             // 
@@ -672,7 +673,7 @@ namespace Panaderia
             this.textBox19.Location = new System.Drawing.Point(118, 83);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(144, 18);
-            this.textBox19.TabIndex = 83;
+            this.textBox19.TabIndex = 0;
             // 
             // label38
             // 
@@ -707,7 +708,7 @@ namespace Panaderia
             this.button19.Location = new System.Drawing.Point(557, 319);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(113, 39);
-            this.button19.TabIndex = 82;
+            this.button19.TabIndex = 9;
             this.button19.Text = "Agregar";
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
@@ -835,7 +836,7 @@ namespace Panaderia
             this.button1.Location = new System.Drawing.Point(13, 6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 31);
-            this.button1.TabIndex = 31;
+            this.button1.TabIndex = 11;
             this.button1.Text = "Nuevo empleado";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
@@ -854,7 +855,7 @@ namespace Panaderia
             this.button8.Location = new System.Drawing.Point(12, 43);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(152, 31);
-            this.button8.TabIndex = 22;
+            this.button8.TabIndex = 12;
             this.button8.Text = "Todos los empleados";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = false;
@@ -893,10 +894,10 @@ namespace Panaderia
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox15);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
