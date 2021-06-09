@@ -281,5 +281,33 @@ namespace Panaderia
         {
             dataGridView2_CellDoubleClick(sender, e);
         }
+
+        private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                pictureBox14_Click(sender, e);
+                e.Handled = true;
+            }
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            cargardetrecetasinactivas();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+               pictureBox1_Click(sender, e);
+                e.Handled = true;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            cargardetrecetasactivas();
+        }
     }
 }

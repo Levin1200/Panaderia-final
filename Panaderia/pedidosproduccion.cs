@@ -282,7 +282,6 @@ namespace Panaderia
                             cmd.Parameters.Add("@id", SqlDbType.Int).Value = int.Parse(label46.Text); //int.Parse(label13.Text);
                             cmd.Parameters.Add("@cod", SqlDbType.VarChar).Value = "1";
                             cmd.Parameters.Add("@sucursal", SqlDbType.Int).Value = 1;
-                        MessageBox.Show("Estado: " + estados);
                             cmd.Parameters.Add("@estado", SqlDbType.Int).Value = estados;
                             cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 7;
 
@@ -494,10 +493,13 @@ namespace Panaderia
 
         private void dataGridView2_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            detrecetas = int.Parse(dataGridView2.CurrentRow.Cells[0].Value.ToString());
-            label28.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
-            cargardetrecetas();
-            label23.Text = "" + detrecetas;
+            if (dataGridView2.RowCount > 0) {
+                detrecetas = int.Parse(dataGridView2.CurrentRow.Cells[0].Value.ToString());
+                label28.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
+                cargardetrecetas();
+                label23.Text = "" + detrecetas;
+            }
+          
         }
 
         private void dataGridView3_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
@@ -697,6 +699,20 @@ namespace Panaderia
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             retornarinventario();
+        }
+
+        private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+               pictureBox14_Click(sender, e);
+                e.Handled = true;
+            }
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            cargarpedidos();
         }
     }
 }

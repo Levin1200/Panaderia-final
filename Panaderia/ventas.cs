@@ -323,7 +323,7 @@ namespace Panaderia
                                 cmd.CommandType = CommandType.StoredProcedure;
                                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = 1; //int.Parse(label13.Text);
                                 cmd.Parameters.Add("@codfact", SqlDbType.VarChar).Value = codigoventas;
-                                cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = 1;
+                                cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = int.Parse(label7.Text);
                                 cmd.Parameters.Add("@idpan", SqlDbType.Int).Value = panid;
                                 cmd.Parameters.Add("@cantidad", SqlDbType.Int).Value = cantidad;
                                 cmd.Parameters.Add("@precio", SqlDbType.Decimal).Value = precio;
@@ -332,7 +332,7 @@ namespace Panaderia
 
                                 cn.Open();
                                 cmd.ExecuteNonQuery();
-                                MessageBox.Show("Se ha agregado una nuevo Pedido", "Detalle de Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                //MessageBox.Show("Se ha agregado una nuevo Pedido", "Detalle de Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 //cargarusuarios();
                                 limpiar();
                             }

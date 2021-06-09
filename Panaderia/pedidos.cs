@@ -100,7 +100,7 @@ namespace Panaderia
 
                             cn.Open();
                             cmd.ExecuteNonQuery();
-                            MessageBox.Show("Se ha agregado una nuevo Pedido", "Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Se ha agregado un nuevo Pedido", "Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             //cargarusuarios();
                             limpiar();
                         }

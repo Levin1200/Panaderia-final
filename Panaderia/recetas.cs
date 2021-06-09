@@ -202,6 +202,7 @@ namespace Panaderia
                 label30.Text = "#" + textBox7.Text;
                 codereceta = textBox7.Text;
                 dataGridView3.Rows.Clear();
+                //
             }
         }
 
@@ -390,6 +391,37 @@ namespace Panaderia
         private void pictureBox14_Click(object sender, EventArgs e)
         {
             cargarrecetas();
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                pictureBox4_Click(sender, e);
+                e.Handled = true;
+            }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+        }
+
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                pictureBox5_Click(sender, e);
+                e.Handled = true;
+            }
+        }
+
+        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                button9_Click(sender, e);
+                e.Handled = true;
+            }
         }
     }
 }
