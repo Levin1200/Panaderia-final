@@ -28,7 +28,6 @@ namespace Panaderia
             panel2.Visible = false;
             textBox5.Text = "";
             textBox19.Text = "";
-            textBox2.Text = "";
             button3.Enabled = false;
             label30.Text = "";
             label25.Text = "n/a";
@@ -52,12 +51,12 @@ namespace Panaderia
         private void button19_Click(object sender, EventArgs e)
         {
 
-            if (textBox19.Text == "" || textBox2.Text == "")
+            if (textBox19.Text == "")
             {
                 MessageBox.Show("Debe llenar todos los campos", "Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else {
-                sucursal = int.Parse(textBox2.Text);
+                sucursal = int.Parse(label60.Text);
                 label30.Text = "#" + textBox19.Text;
                 pedido = textBox19.Text;
                 realizarpedido.Visible = false;
@@ -346,7 +345,7 @@ namespace Panaderia
 
         private void dataGridView4_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox2.Text = "" + dataGridView4.CurrentRow.Cells[0].Value;
+           // textBox2.Text = "" + dataGridView4.CurrentRow.Cells[0].Value;
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)

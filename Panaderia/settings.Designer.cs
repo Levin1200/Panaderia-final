@@ -190,7 +190,7 @@ namespace Panaderia
             this.label60.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "sucursal", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.label60.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label60.ForeColor = System.Drawing.Color.White;
-            this.label60.Location = new System.Drawing.Point(737, 227);
+            this.label60.Location = new System.Drawing.Point(737, 210);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(23, 25);
             this.label60.TabIndex = 170;
@@ -201,7 +201,7 @@ namespace Panaderia
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label61.ForeColor = System.Drawing.Color.White;
-            this.label61.Location = new System.Drawing.Point(631, 228);
+            this.label61.Location = new System.Drawing.Point(737, 185);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(87, 25);
             this.label61.TabIndex = 171;
