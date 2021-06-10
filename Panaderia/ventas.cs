@@ -290,7 +290,7 @@ namespace Panaderia
                             cmd.Parameters.Add("@codfact", SqlDbType.VarChar).Value = codigoventas;
                             cmd.Parameters.Add("@idcli", SqlDbType.Int).Value = int.Parse(textBox2.Text);
                             cmd.Parameters.Add("@tpago", SqlDbType.Int).Value = int.Parse(textBox9.Text);
-                            cmd.Parameters.Add("@idusu", SqlDbType.Int).Value = int.Parse(label7.Text);
+                            cmd.Parameters.Add("@idusu", SqlDbType.Int).Value = int.Parse(label22.Text);
                             cmd.Parameters.Add("@tot", SqlDbType.Decimal).Value = 1;
                             cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = int.Parse(label22.Text);
                             cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 1;
@@ -326,7 +326,7 @@ namespace Panaderia
                                 cmd.CommandType = CommandType.StoredProcedure;
                                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = 1; //int.Parse(label13.Text);
                                 cmd.Parameters.Add("@codfact", SqlDbType.VarChar).Value = codigoventas;
-                                cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = int.Parse(label7.Text);
+                                cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = int.Parse(label22.Text);
                                 cmd.Parameters.Add("@idpan", SqlDbType.Int).Value = panid;
                                 cmd.Parameters.Add("@cantidad", SqlDbType.Int).Value = cantidad;
                                 cmd.Parameters.Add("@precio", SqlDbType.Decimal).Value = precio;
