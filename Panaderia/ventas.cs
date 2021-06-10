@@ -59,7 +59,7 @@ namespace Panaderia
                         cmd.Parameters.Add("@tpago", SqlDbType.Int).Value = 1;
                         cmd.Parameters.Add("@idusu", SqlDbType.Int).Value = int.Parse(label7.Text);
                         cmd.Parameters.Add("@tot", SqlDbType.Decimal).Value = 1;
-                        cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = int.Parse(label22.Text) ;
+                        cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = int.Parse(label22.Text);
                         cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 3;
                         cn.Open();
                         cmd.ExecuteNonQuery();
@@ -94,7 +94,7 @@ namespace Panaderia
             label25.Text = "n/a";
             label28.Text = "Seleccione los panes para la venta";
             textBox6.Text = "";
-            textBox10.Text = "";
+           // textBox10.Text = "";
 
         }
 
@@ -113,7 +113,7 @@ namespace Panaderia
         private void button19_Click(object sender, EventArgs e)
         {
 
-            if (textBox19.Text == "" || textBox2.Text == "" || textBox9.Text == "" || textBox10.Text == "")
+            if (textBox19.Text == "" || textBox2.Text == "" || textBox9.Text == "" )
             {
                 MessageBox.Show("Debe llenar todos los campos", "Compras", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -254,7 +254,10 @@ namespace Panaderia
             limpiar();
             compraIng.Visible = false;
             realizarcompras.Visible = true;
-            dataGridView3.Rows.Clear();
+            if (dataGridView3.RowCount > 0) {
+                dataGridView3.Rows.Clear();
+            }
+           
             panel2.Visible = true;
         }
 
@@ -289,7 +292,7 @@ namespace Panaderia
                             cmd.Parameters.Add("@tpago", SqlDbType.Int).Value = int.Parse(textBox9.Text);
                             cmd.Parameters.Add("@idusu", SqlDbType.Int).Value = int.Parse(label7.Text);
                             cmd.Parameters.Add("@tot", SqlDbType.Decimal).Value = 1;
-                            cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = int.Parse(textBox10.Text);
+                            cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = int.Parse(label22.Text);
                             cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 1;
 
                             cn.Open();
@@ -378,6 +381,7 @@ namespace Panaderia
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //label39.Text = label22.Text;
             button4_Click(sender, e);
             ocultar();
             allpedidos.Visible = true;
@@ -387,6 +391,7 @@ namespace Panaderia
             label8.Text = "Todas las Ventas";
             dataGridView1.AutoResizeColumns();
             dataGridView5.AutoResizeColumns();
+            //label22.Text = label39.Text;
         }
 
         private void cargardetventas()

@@ -201,6 +201,7 @@ namespace Panaderia
             pproduccion.Visible = false;
             Ventas.Visible = false;
             compras.Visible = false;
+            ajustes.Visible = false;
         }
 
         private void button2_MouseEnter(object sender, EventArgs e)
@@ -466,14 +467,27 @@ namespace Panaderia
 
         private void button14_Click(object sender, EventArgs e)
         {
-            settings bc = new settings();
-            bc.MdiParent = this.MdiParent;
-            bc.Show();
+            limpiar();
+            ajustes.Visible = true;
         }
 
         private void pictureBox23_Click(object sender, EventArgs e)
         {
             rolnivel bc = new rolnivel();
+            bc.MdiParent = this.MdiParent;
+            bc.Show();
+        }
+
+        private void pictureBox66_Click(object sender, EventArgs e)
+        {
+            settings bc = new settings();
+            bc.MdiParent = this.MdiParent;
+            bc.Show();
+        }
+
+        private void pictureBox64_Click(object sender, EventArgs e)
+        {
+            permisos bc = new permisos();
             bc.MdiParent = this.MdiParent;
             bc.Show();
         }
