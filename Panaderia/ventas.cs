@@ -181,22 +181,20 @@ namespace Panaderia
             {
                 using (SqlConnection cn = new SqlConnection("server=" + label12.Text + " ; database=" + label9.Text + " ; user id = sa; password='Valley';"))
                 {
-                    using (SqlCommand cmd = new SqlCommand("propan", cn))
+                    using (SqlCommand cmd = new SqlCommand("pstock", cn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add("@pcod", SqlDbType.Int).Value = 1;
-                        cmd.Parameters.Add("@pnom", SqlDbType.VarChar).Value = textBox1.Text;
-                        cmd.Parameters.Add("@pprecio", SqlDbType.Decimal).Value = 1;
-                        cmd.Parameters.Add("@pestado", SqlDbType.Int).Value = 1;
-                        cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 3;
-                        cmd.Parameters.Add("@pid", SqlDbType.Int).Value = 1;
+                        cmd.Parameters.Add("@id", SqlDbType.VarChar).Value = "1";
+                        cmd.Parameters.Add("@cantidad", SqlDbType.VarChar).Value = '1';
+                        cmd.Parameters.Add("@bodega", SqlDbType.VarChar).Value = "1";
+                        cmd.Parameters.Add("@sucursal", SqlDbType.Int).Value = int.Parse(label22.Text);
+                        cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 2;
                         cn.Open();
                         cmd.ExecuteNonQuery();
                         SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                         DataSet ds = new DataSet();
                         adapter.Fill(ds);
                         dataGridView2.DataSource = ds.Tables[0];
-                        //label17.Text = dataGridView1.Rows.Count.ToString();
 
                     }
                 }
@@ -217,8 +215,9 @@ namespace Panaderia
         {
             button3.Enabled = true;
             label25.Text = "" + dataGridView2.CurrentRow.Cells[0].Value;
-            label28.Text = "" + dataGridView2.CurrentRow.Cells[2].Value;
-            label26.Text = "" + dataGridView2.CurrentRow.Cells[3].Value;
+            label28.Text = "" + dataGridView2.CurrentRow.Cells[1].Value;
+            label26.Text = "" + dataGridView2.CurrentRow.Cells[5].Value;
+            label40.Text = "" + dataGridView2.CurrentRow.Cells[2].Value;
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -231,20 +230,32 @@ namespace Panaderia
             }
             else
             {
-                try
+                int a = int.Parse(label40.Text);
+                int b = int.Parse(textBox6.Text);
+
+                if (a >= b)
                 {
-                    int cantidad = int.Parse(textBox6.Text);
-                    double precio = double.Parse(label26.Text);
-                    double total = cantidad * precio;
-                    dataGridView3.Rows.Add(codigoventas, label25.Text, label28.Text, "" + cantidad, "" + precio, "" + total);
+                    try
+                    {
+                        int cantidad = int.Parse(textBox6.Text);
+                        double precio = double.Parse(label26.Text);
+                        double total = cantidad * precio;
+                        dataGridView3.Rows.Add(codigoventas, label25.Text, label28.Text, "" + cantidad, "" + precio, "" + total);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Error en la conversion", "Venta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                catch
-                {
-                    MessageBox.Show("Error en la conversion", "Compras", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else {
+                    MessageBox.Show("No hay stock", "Venta", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
+               
             }
             label25.Text = "n/a";
             label25.Text = "n/a";
+            label40.Text = "n/a";
             label28.Text = "Seleccione un Pan para la venta";
             textBox6.Text = "";
         }
@@ -290,7 +301,7 @@ namespace Panaderia
                             cmd.Parameters.Add("@codfact", SqlDbType.VarChar).Value = codigoventas;
                             cmd.Parameters.Add("@idcli", SqlDbType.Int).Value = int.Parse(textBox2.Text);
                             cmd.Parameters.Add("@tpago", SqlDbType.Int).Value = int.Parse(textBox9.Text);
-                            cmd.Parameters.Add("@idusu", SqlDbType.Int).Value = int.Parse(label22.Text);
+                            cmd.Parameters.Add("@idusu", SqlDbType.Int).Value = int.Parse(label7.Text);
                             cmd.Parameters.Add("@tot", SqlDbType.Decimal).Value = 1;
                             cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = int.Parse(label22.Text);
                             cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 1;
@@ -343,7 +354,7 @@ namespace Panaderia
                     }
                     catch
                     {
-                        MessageBox.Show("Ha sucedido un error al insertar", "Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Ha sucedido un error al insertar", "Detalle Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         error = 1;
                     }
                 }
@@ -486,6 +497,11 @@ namespace Panaderia
         }
 
         private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
