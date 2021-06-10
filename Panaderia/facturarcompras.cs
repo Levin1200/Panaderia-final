@@ -139,7 +139,7 @@ namespace Panaderia
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Print(this.factura);
+            Print(this.panel1);
         }
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
