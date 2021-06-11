@@ -209,9 +209,9 @@ namespace Panaderia
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(54, 18);
+            this.dataGridView1.Location = new System.Drawing.Point(-375, 31);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(355, 92);
+            this.dataGridView1.Size = new System.Drawing.Size(765, 92);
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.Visible = false;
             // 
@@ -312,7 +312,7 @@ namespace Panaderia
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(-36, 493);
+            this.pictureBox4.Location = new System.Drawing.Point(-20, 493);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(497, 100);
             this.pictureBox4.TabIndex = 144;
@@ -442,6 +442,7 @@ namespace Panaderia
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(421, 565);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
@@ -469,7 +470,6 @@ namespace Panaderia
             this.Controls.Add(this.dbase);
             this.Controls.Add(this.server);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);

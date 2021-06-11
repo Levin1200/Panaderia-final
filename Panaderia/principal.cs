@@ -37,9 +37,50 @@ namespace Panaderia
             contarproduccion();
             contarventas();
            int a= int.Parse(label65.Text);
+            int rol = int.Parse(label67.Text);
             int b = int.Parse(label84.Text);
-            MessageBox.Show("" + a + "<=" + b);
+           //SETTINGS
             if (a <= b) { } else { button14.Enabled = false; }
+            //ADMIN
+            int c = int.Parse(label83.Text);
+            if (a <= c) { } else { pictureBox2.Enabled = false; }
+            //PANADERIA
+            int d = int.Parse(label77.Text);
+            if (a <= d) { } else { pictureBox4.Enabled = false; }
+            //PERSONAS
+            int f = int.Parse(label81.Text);
+            if (a <= f) { } else { pictureBox3.Enabled = false; }
+            //ROL
+            int g = int.Parse(label80.Text);
+            if (a <= g) { } else { pictureBox62.Enabled = false; }
+
+
+           
+            
+            
+            //VENTAS
+            int h = int.Parse(label82.Text);
+            int hh = int.Parse(label76.Text);
+            if (a <= h && rol==hh ||a<h) { } else {
+                
+                
+                
+                
+                button11.Enabled = false; }
+
+            //COMPRAS
+            int j = int.Parse(label79.Text);
+            int jj = int.Parse(label75.Text);
+            if (a <= j && rol == jj || a < h) { } else { button9.Enabled = false; }
+
+            //PRODUCCION
+            int k = int.Parse(label78.Text);
+            int kk = int.Parse(label74.Text);
+            if (a <= k && rol == kk || a < h) { } else { button8.Enabled = false; }
+
+
+            //REALIZAR RECETAS
+            if (a <= j && rol == jj || a <= h && rol==hh || a < h) { } else { button3.Enabled = false; button5.Enabled = false; }
         }
 
 

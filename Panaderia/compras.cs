@@ -165,7 +165,7 @@ namespace Panaderia
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.Add("@icod", SqlDbType.VarChar).Value = "1";
-                        cmd.Parameters.Add("@inom", SqlDbType.VarChar).Value = textBox1.Text;
+                        cmd.Parameters.Add("@inom", SqlDbType.VarChar).Value = textBox5.Text;
                         cmd.Parameters.Add("@imedida", SqlDbType.VarChar).Value = "1";
                         cmd.Parameters.Add("@iestado", SqlDbType.Int).Value = 1;
                         cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 3;
@@ -289,7 +289,7 @@ namespace Panaderia
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
-            
+            cargarcompras();
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
@@ -446,6 +446,11 @@ namespace Panaderia
         private void dataGridView4_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             textBox2.Text = "" + dataGridView4.CurrentRow.Cells[0].Value;
+        }
+
+        private void allpedidos_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
