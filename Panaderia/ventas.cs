@@ -143,7 +143,7 @@ namespace Panaderia
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.Add("@ccod", SqlDbType.VarChar).Value = "1";
-                        cmd.Parameters.Add("@cnom", SqlDbType.VarChar).Value = textBox1.Text;
+                        cmd.Parameters.Add("@cnom", SqlDbType.VarChar).Value = textBox7.Text;
                         cmd.Parameters.Add("@cnit", SqlDbType.VarChar).Value = "1";
                         cmd.Parameters.Add("@ctel", SqlDbType.VarChar).Value = "1";
                         cmd.Parameters.Add("@cdir", SqlDbType.VarChar).Value = "1";
@@ -199,7 +199,7 @@ namespace Panaderia
                     }
                 }
             }
-            catch { MessageBox.Show("Ha sucedido un error", "Ingredientes", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            catch { MessageBox.Show("Ha sucedido un error", "Pan", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
         private void dataGridView4_CellClick(object sender, DataGridViewCellEventArgs e)
         {
