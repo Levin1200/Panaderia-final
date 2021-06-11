@@ -69,7 +69,7 @@ namespace Panaderia
                         cmd.Parameters.Add("@tpago", SqlDbType.Int).Value = 1;
                         cmd.Parameters.Add("@idusu", SqlDbType.Int).Value = int.Parse(label7.Text);
                         cmd.Parameters.Add("@tot", SqlDbType.Decimal).Value = 1;
-                        cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = 1;
+                        cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = int.Parse(label60.Text);
                         cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 6;
                         cn.Open();
                         cmd.ExecuteNonQuery();

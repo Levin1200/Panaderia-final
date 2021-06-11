@@ -230,8 +230,8 @@ namespace Panaderia
             }
             else
             {
-                int a = int.Parse(label40.Text);
-                int b = int.Parse(textBox6.Text);
+                double a = double.Parse(label40.Text);
+                double b = double.Parse(textBox6.Text);
 
                 if (a >= b)
                 {

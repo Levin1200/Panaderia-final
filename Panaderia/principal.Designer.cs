@@ -2723,7 +2723,7 @@ namespace Panaderia
             this.label65.AutoSize = true;
             this.label65.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "nivel", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.label65.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.ForeColor = System.Drawing.Color.White;
+            this.label65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label65.Location = new System.Drawing.Point(385, 19);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(35, 21);

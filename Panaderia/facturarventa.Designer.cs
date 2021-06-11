@@ -71,15 +71,17 @@ namespace Panaderia
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.allpedidos.SuspendLayout();
@@ -561,6 +563,17 @@ namespace Panaderia
             this.panel1.Size = new System.Drawing.Size(659, 495);
             this.panel1.TabIndex = 116;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("HelveticaNeueLT Std Med", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label14.Location = new System.Drawing.Point(88, 155);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(100, 23);
+            this.label14.TabIndex = 110;
+            this.label14.Text = "#Factura:";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Location = new System.Drawing.Point(260, 155);
@@ -627,17 +640,6 @@ namespace Panaderia
             this.label13.TabIndex = 108;
             this.label13.Text = "Fecha:";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("HelveticaNeueLT Std Med", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label14.Location = new System.Drawing.Point(88, 155);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 23);
-            this.label14.TabIndex = 110;
-            this.label14.Text = "#Factura:";
-            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -649,12 +651,39 @@ namespace Panaderia
             this.label25.TabIndex = 100;
             this.label25.Text = "Detalle";
             // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "sucursal", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label60.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.ForeColor = System.Drawing.Color.White;
+            this.label60.Location = new System.Drawing.Point(535, 28);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(19, 21);
+            this.label60.TabIndex = 166;
+            this.label60.Text = global::Panaderia.Properties.Settings.Default.sucursal;
+            this.label60.Visible = false;
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.ForeColor = System.Drawing.Color.White;
+            this.label61.Location = new System.Drawing.Point(454, 28);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(69, 21);
+            this.label61.TabIndex = 167;
+            this.label61.Text = "Sucursal";
+            this.label61.Visible = false;
+            // 
             // facturarventa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1003, 618);
+            this.Controls.Add(this.label60);
+            this.Controls.Add(this.label61);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
@@ -737,5 +766,7 @@ namespace Panaderia
         private System.Windows.Forms.Label label25;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label61;
     }
 }
