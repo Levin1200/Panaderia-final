@@ -36,7 +36,10 @@ namespace Panaderia
             contarpedidos();
             contarproduccion();
             contarventas();
-           
+           int a= int.Parse(label65.Text);
+            int b = int.Parse(label84.Text);
+            MessageBox.Show("" + a + "<=" + b);
+            if (a <= b) { } else { button14.Enabled = false; }
         }
 
 

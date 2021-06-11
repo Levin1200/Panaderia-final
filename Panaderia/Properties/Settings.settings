@@ -54,13 +54,13 @@
       <Value Profile="(Default)">5</Value>
     </Setting>
     <Setting Name="rolventa" Type="System.String" Scope="User">
-      <Value Profile="(Default)">2</Value>
+      <Value Profile="(Default)">1007</Value>
     </Setting>
     <Setting Name="rolcompra" Type="System.String" Scope="User">
-      <Value Profile="(Default)">2</Value>
+      <Value Profile="(Default)">1006</Value>
     </Setting>
     <Setting Name="rolproduccion" Type="System.String" Scope="User">
-      <Value Profile="(Default)">2</Value>
+      <Value Profile="(Default)">1005</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -223,6 +223,17 @@ namespace Panaderia
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
@@ -2718,7 +2729,6 @@ namespace Panaderia
             this.label65.Size = new System.Drawing.Size(35, 21);
             this.label65.TabIndex = 168;
             this.label65.Text = global::Panaderia.Properties.Settings.Default.nivel;
-            this.label65.Visible = false;
             // 
             // label67
             // 
@@ -2796,12 +2806,155 @@ namespace Panaderia
             this.label6.Text = global::Panaderia.Properties.Settings.Default.Sesion;
             this.label6.Visible = false;
             // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "rolproduccion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label74.ForeColor = System.Drawing.Color.White;
+            this.label74.Location = new System.Drawing.Point(120, 82);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(31, 13);
+            this.label74.TabIndex = 179;
+            this.label74.Text = global::Panaderia.Properties.Settings.Default.rolproduccion;
+            this.label74.Visible = false;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "rolcompra", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label75.ForeColor = System.Drawing.Color.White;
+            this.label75.Location = new System.Drawing.Point(157, 58);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(31, 13);
+            this.label75.TabIndex = 180;
+            this.label75.Text = global::Panaderia.Properties.Settings.Default.rolcompra;
+            this.label75.Visible = false;
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "rolventa", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label76.ForeColor = System.Drawing.Color.White;
+            this.label76.Location = new System.Drawing.Point(120, 58);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(31, 13);
+            this.label76.TabIndex = 181;
+            this.label76.Text = global::Panaderia.Properties.Settings.Default.rolventa;
+            this.label76.Visible = false;
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "npan", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label77.ForeColor = System.Drawing.Color.White;
+            this.label77.Location = new System.Drawing.Point(31, 58);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(13, 13);
+            this.label77.TabIndex = 171;
+            this.label77.Text = global::Panaderia.Properties.Settings.Default.npan;
+            this.label77.Visible = false;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "nproduccion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label78.ForeColor = System.Drawing.Color.White;
+            this.label78.Location = new System.Drawing.Point(66, 82);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(13, 13);
+            this.label78.TabIndex = 172;
+            this.label78.Text = global::Panaderia.Properties.Settings.Default.nproduccion;
+            this.label78.Visible = false;
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "ncompra", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label79.ForeColor = System.Drawing.Color.White;
+            this.label79.Location = new System.Drawing.Point(85, 58);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(13, 13);
+            this.label79.TabIndex = 173;
+            this.label79.Text = global::Panaderia.Properties.Settings.Default.ncompra;
+            this.label79.Visible = false;
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "nrol", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label80.ForeColor = System.Drawing.Color.White;
+            this.label80.Location = new System.Drawing.Point(31, 84);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(13, 13);
+            this.label80.TabIndex = 174;
+            this.label80.Text = global::Panaderia.Properties.Settings.Default.nrol;
+            this.label80.Visible = false;
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "npersonas", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label81.ForeColor = System.Drawing.Color.White;
+            this.label81.Location = new System.Drawing.Point(12, 84);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(13, 13);
+            this.label81.TabIndex = 175;
+            this.label81.Text = global::Panaderia.Properties.Settings.Default.npersonas;
+            this.label81.Visible = false;
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "nventa", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label82.ForeColor = System.Drawing.Color.White;
+            this.label82.Location = new System.Drawing.Point(66, 58);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(13, 13);
+            this.label82.TabIndex = 176;
+            this.label82.Text = global::Panaderia.Properties.Settings.Default.nventa;
+            this.label82.Visible = false;
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "nadmin", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label83.ForeColor = System.Drawing.Color.White;
+            this.label83.Location = new System.Drawing.Point(12, 58);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(13, 13);
+            this.label83.TabIndex = 177;
+            this.label83.Text = global::Panaderia.Properties.Settings.Default.nadmin;
+            this.label83.Visible = false;
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Panaderia.Properties.Settings.Default, "nconfiguracion", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.label84.ForeColor = System.Drawing.Color.White;
+            this.label84.Location = new System.Drawing.Point(12, 33);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(13, 13);
+            this.label84.TabIndex = 178;
+            this.label84.Text = global::Panaderia.Properties.Settings.Default.nconfiguracion;
+            this.label84.Visible = false;
+            // 
             // principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1003, 618);
+            this.Controls.Add(this.label74);
+            this.Controls.Add(this.label75);
+            this.Controls.Add(this.label76);
+            this.Controls.Add(this.label77);
+            this.Controls.Add(this.label78);
+            this.Controls.Add(this.label79);
+            this.Controls.Add(this.label80);
+            this.Controls.Add(this.label81);
+            this.Controls.Add(this.label82);
+            this.Controls.Add(this.label83);
+            this.Controls.Add(this.label84);
             this.Controls.Add(this.label64);
             this.Controls.Add(this.label65);
             this.Controls.Add(this.label66);
@@ -3155,5 +3308,16 @@ namespace Panaderia
         private System.Windows.Forms.PictureBox pictureBox65;
         private System.Windows.Forms.PictureBox pictureBox66;
         private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label84;
     }
 }

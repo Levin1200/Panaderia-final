@@ -96,8 +96,8 @@ namespace Panaderia
                 if (textBox19.Text == "" || textBox3.Text == "" || textBox5.Text == "" || textBox4.Text == "") { MessageBox.Show("Debe llenar todos los campos", "Proveedores", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
                 else
                 {
-                    try
-                    {
+                    //try
+                    //{
                         using (SqlConnection cn = new SqlConnection("server=" + label12.Text + " ; database=" + label9.Text + " ; user id = sa; password='Valley';"))
                         {
                             using (SqlCommand cmd = new SqlCommand("RegistrarUsuario", cn))
@@ -110,7 +110,8 @@ namespace Panaderia
                                 cmd.Parameters.Add("@estadou", SqlDbType.Int).Value = 1;
                                 cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 1;
                                 cmd.Parameters.Add("@passwords", SqlDbType.VarChar).Value = textBox4.Text;
-                                cmd.Parameters.Add("@imagen", SqlDbType.VarChar).Value = pictureBox13.ImageLocation;
+                                cmd.Parameters.Add("@imagen", SqlDbType.VarChar).Value = label23.Text;
+                                //MessageBox.Show(pictureBox13.ImageLocation);
                                 cmd.Parameters.Add("@rol", SqlDbType.Int).Value = int.Parse(textBox6.Text);
                                 cn.Open();
                                 cmd.ExecuteNonQuery();
@@ -119,11 +120,11 @@ namespace Panaderia
                                 limpiar();
                             }
                         }
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Ha sucedido un error al insertar", "Usuarios", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                   // }
+                   // catch
+                    //{
+                   //     MessageBox.Show("Ha sucedido un error al insertar", "Usuarios", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                   // }
                 }
             }
             else
@@ -206,6 +207,7 @@ namespace Panaderia
         {
             openFileDialog1.ShowDialog();
             pictureBox13.ImageLocation = openFileDialog1.FileName;
+            label23.Text = pictureBox13.ImageLocation;
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
