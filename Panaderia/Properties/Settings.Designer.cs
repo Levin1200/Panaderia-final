@@ -130,5 +130,137 @@ namespace Panaderia.Properties {
                 this["nivel"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public string nconfiguracion {
+            get {
+                return ((string)(this["nconfiguracion"]));
+            }
+            set {
+                this["nconfiguracion"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("4")]
+        public string nadmin {
+            get {
+                return ((string)(this["nadmin"]));
+            }
+            set {
+                this["nadmin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public string npan {
+            get {
+                return ((string)(this["npan"]));
+            }
+            set {
+                this["npan"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        public string npersonas {
+            get {
+                return ((string)(this["npersonas"]));
+            }
+            set {
+                this["npersonas"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public string nrol {
+            get {
+                return ((string)(this["nrol"]));
+            }
+            set {
+                this["nrol"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public string nventa {
+            get {
+                return ((string)(this["nventa"]));
+            }
+            set {
+                this["nventa"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public string ncompra {
+            get {
+                return ((string)(this["ncompra"]));
+            }
+            set {
+                this["ncompra"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public string nproduccion {
+            get {
+                return ((string)(this["nproduccion"]));
+            }
+            set {
+                this["nproduccion"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public string rolventa {
+            get {
+                return ((string)(this["rolventa"]));
+            }
+            set {
+                this["rolventa"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public string rolcompra {
+            get {
+                return ((string)(this["rolcompra"]));
+            }
+            set {
+                this["rolcompra"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public string rolproduccion {
+            get {
+                return ((string)(this["rolproduccion"]));
+            }
+            set {
+                this["rolproduccion"] = value;
+            }
+        }
     }
 }
