@@ -94,10 +94,10 @@ namespace Panaderia
                     using (SqlCommand cmd = new SqlCommand("prodetventas", cn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = 1; ; //int.Parse(label13.Text);
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = detventas; ; //int.Parse(label13.Text);
                         cmd.Parameters.Add("@codfact", SqlDbType.VarChar).Value = "1";
                         cmd.Parameters.Add("@idsucur", SqlDbType.Int).Value = 1;
-                        cmd.Parameters.Add("@idpan", SqlDbType.Int).Value = detventas;
+                        cmd.Parameters.Add("@idpan", SqlDbType.Int).Value = 1;
                         cmd.Parameters.Add("@cantidad", SqlDbType.Int).Value = 1;
                         cmd.Parameters.Add("@precio", SqlDbType.Decimal).Value = 1;
                         cmd.Parameters.Add("@opcion", SqlDbType.Int).Value = 4;

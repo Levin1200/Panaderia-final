@@ -88,7 +88,7 @@ namespace Panaderia
 
                             cn.Open();
                             cmd.ExecuteNonQuery();
-                            MessageBox.Show("Produccion enviada a sucursal", "Produccion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            //MessageBox.Show("Produccion enviada a sucursal", "Produccion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             cargarproduccion();
                         }
                     }
