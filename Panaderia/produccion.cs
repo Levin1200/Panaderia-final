@@ -161,12 +161,17 @@ namespace Panaderia
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            detpedidos = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            if (dataGridView1.RowCount > 0)
+            {
+                detpedidos = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
 
-            label19.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            cargardetpedidos();
-            ocultar();
-            produccionpedido.Visible = true;
+                label19.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                cargardetpedidos();
+                ocultar();
+                produccionpedido.Visible = true;
+            }
+            else { }
+           
         }
 
         private void man_Click(object sender, EventArgs e)
@@ -344,10 +349,13 @@ namespace Panaderia
 
         private void dataGridView4_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            codeproduccion = int.Parse(dataGridView4.CurrentRow.Cells[0].Value.ToString());
-            label34.Text = "" + codeproduccion;
-            pedidos = int.Parse(dataGridView4.CurrentRow.Cells[1].Value.ToString());
-            cargardetproduccion();
+            if (dataGridView4.RowCount > 0) {
+                codeproduccion = int.Parse(dataGridView4.CurrentRow.Cells[0].Value.ToString());
+                label34.Text = "" + codeproduccion;
+                pedidos = int.Parse(dataGridView4.CurrentRow.Cells[1].Value.ToString());
+                cargardetproduccion();
+            } else { }
+          
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -134,6 +134,7 @@ namespace Panaderia
             this.label32 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button11 = new System.Windows.Forms.Button();
             this.allpedidos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -839,6 +840,7 @@ namespace Panaderia
             // ingredientes
             // 
             this.ingredientes.AutoScroll = true;
+            this.ingredientes.Controls.Add(this.button11);
             this.ingredientes.Controls.Add(this.label43);
             this.ingredientes.Controls.Add(this.label41);
             this.ingredientes.Controls.Add(this.label40);
@@ -1423,6 +1425,24 @@ namespace Panaderia
             this.label44.Text = "0";
             this.label44.Visible = false;
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Crimson;
+            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Location = new System.Drawing.Point(1034, 406);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(136, 39);
+            this.button11.TabIndex = 142;
+            this.button11.Text = "Rechazar pedido";
+            this.toolTip1.SetToolTip(this.button11, "El pedido se rechazara");
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
+            // 
             // pedidosproduccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1451,10 +1471,10 @@ namespace Panaderia
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label8);
+            this.Controls.Add(this.panesrecetas);
             this.Controls.Add(this.ingredientes);
             this.Controls.Add(this.final);
             this.Controls.Add(this.allpedidos);
-            this.Controls.Add(this.panesrecetas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "pedidosproduccion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1573,5 +1593,6 @@ namespace Panaderia
         protected internal System.Windows.Forms.DataGridView dataGridView7;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button button11;
     }
 }

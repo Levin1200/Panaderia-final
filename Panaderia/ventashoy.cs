@@ -109,8 +109,11 @@ namespace Panaderia
         int detventas;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            detventas = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            cargardetventas();
+            if (dataGridView1.RowCount > 0) {
+                detventas = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                cargardetventas();
+            } else { }
+          
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)

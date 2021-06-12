@@ -53,7 +53,9 @@ namespace Panaderia
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            label3.Text = "" + dataGridView1.CurrentRow.Cells[1].Value;
+           
+
+            if (dataGridView1.RowCount > 0) { label3.Text = "" + dataGridView1.CurrentRow.Cells[1].Value; } else { }
         }
         private void finalizarproduccion()
         {

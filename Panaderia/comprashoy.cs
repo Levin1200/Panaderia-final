@@ -84,8 +84,12 @@ namespace Panaderia
         int detcompras;
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            detcompras = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            cargardetcompras();
+            if (dataGridView1.RowCount > 0) {
+                detcompras = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                cargardetcompras();
+            }
+            else{ }
+          
         }
 
         private void posicion(int pos)

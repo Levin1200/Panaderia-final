@@ -713,5 +713,33 @@ namespace Panaderia
         {
             cargarpedidos();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click_1(object sender, EventArgs e)
+        {
+            retornarinventario();
+            DialogResult result = MessageBox.Show("¿Realmente desea rechazar el pedido?", "Produccion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                epedidocod = int.Parse(label46.Text);
+                estados = int.Parse(label17.Text);
+                agregarpedido();
+                label3.Text = "0";
+                dataGridView5.DataSource = null;
+                dataGridView2.DataSource = null;
+                button10_Click(sender, e);
+                ocultar();
+                allpedidos.Visible = true;
+
+            }
+            else
+            {
+                MessageBox.Show("Operacion cancelada", "Produccion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
